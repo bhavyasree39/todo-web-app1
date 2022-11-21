@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <title>Django To-do Lists</title>
+</head>
+</head>
+<body>
+<h1>WECLOME TO TODO WEB APP</h1>
+
+
+<form method="post">
+    {% csrf_token %}
+    <tr>
+        <td>
+            <label>Enter List</label>
+        </td>
+        <td>
+            <input type="text" name="add_list">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="submit" value="add">add</button>
+        </td>
+    </tr>
+
+</form>
+
+
+</body>
+</html>
